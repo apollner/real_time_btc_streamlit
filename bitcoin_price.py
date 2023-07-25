@@ -36,7 +36,7 @@ def get_historical_bitcoin_price():
 
     # Convert UTC to local time assuming a 3-hour difference
     price_data['time'] = price_data['time'].apply(
-        lambda x: x + timedelta(hours=3))
+        lambda x: x + timedelta(hours=1))
     price_data = price_data.rename(columns={'time': 'time', 'close': 'price'})
 
     return price_data[['time', 'price']]
