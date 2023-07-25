@@ -110,4 +110,4 @@ while True:
     graph_placeholder.plotly_chart(fig)
 
     # Wait for 1 second
-    time.sleep(2)
+    time.sleep(2.5)
