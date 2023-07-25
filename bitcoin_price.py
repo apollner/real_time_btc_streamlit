@@ -8,7 +8,7 @@ from prophet import Prophet
 from plotly import graph_objs as go
 
 # Set up the Streamlit layout
-st.title('Real-time Bitcoin Price')
+st.title('Real-time Bitcoin Price Prediction')
 price_text = st.empty()
 prediction_text = st.empty()
 graph_placeholder = st.empty()
