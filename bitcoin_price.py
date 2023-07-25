@@ -34,9 +34,7 @@ def get_historical_bitcoin_price():
     price_data = pd.DataFrame(data)
     price_data['time'] = pd.to_datetime(price_data['time'], unit='s')
 
-    # Convert UTC to local time assuming a 3-hour difference
-    price_data['time'] = price_data['time'].apply(
-        lambda x: x + timedelta(hours=1))
+
     price_data = price_data.rename(columns={'time': 'time', 'close': 'price'})
 
     return price_data[['time', 'price']]
