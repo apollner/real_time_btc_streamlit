@@ -54,7 +54,7 @@ m = Prophet()
 
 # Variables to control the prediction timing
 start_time = time.time()
-prediction_interval = 1  # predict every 60 seconds
+prediction_interval = 2  # predict every 60 seconds
 
 # Update the Bitcoin price every second and make predictions every minute
 while True:
